@@ -10,7 +10,7 @@ HEADERS = {
     "Content-Type": "application/json",
     "Referer": "https://fynd-ai-intern-assignment.streamlit.app",
     "X-Title": "Fynd AI Intern Take Home Assignment",
-    "User-Agent": "Fynd-AI-Intern-Assignment/1.0"
+    "User-Agent": "Fynd-ai/1.0"
 }
 
 
@@ -73,6 +73,7 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
 
 
