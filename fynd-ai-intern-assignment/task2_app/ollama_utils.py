@@ -13,11 +13,10 @@ MODEL = "mistralai/devstral-2512:free"
 HEADERS = {
     "Authorization": f"Bearer {OPENROUTER_API_KEY}",
     "Content-Type": "application/json",
-    "Referer": "https://fynd-ai-user.streamlit.app",
-    "X-Title": "Fynd AI Intern Take Home Assignment",
-    "User-Agent": "Fynd-AI-Intern/1.0"
+    "Referer": "https://fynd-ai.streamlit.app",
+    "X-Title": "Fynd AI Intern Assignment",
+    "User-Agent": "fynd-ai-intern/1.0"
 }
-
 
 
 def call_llm(prompt):
@@ -38,66 +37,31 @@ def call_llm(prompt):
         )
 
         response.raise_for_status()
-        return response.json()["choices"][0]["message"]["content"].strip()
+        return response.json()["choices"][0]["message"]["content"]
 
     except Exception as e:
         return f"AI service unavailable: {str(e)}"
 
 
-
 def analyze_feedback(review, rating):
     prompt = f"""
-You are an internal AI system for business feedback analysis.
+You are an internal business feedback analysis system.
 
 Rating: {rating}
 Review: "{review}"
 
-Return ONLY valid JSON in this format:
+Return ONLY valid JSON in this exact format:
 
 {{
-  "consistency": one of [
-    "Consistent Positive",
-    "Consistent Negative",
-    "Contradictory Signals",
-    "Ambiguous"
-  ],
-  "action_category": one of [
-    "Apology & Recovery",
-    "Refund / Escalation",
-    "Feature Improvement",
-    "Staff Training",
-    "Marketing Opportunity",
-    "No Action Needed"
-  ],
+  "consistency": "Consistent Positive | Consistent Negative | Contradictory Signals | Ambiguous",
+  "action_category": "Apology & Recovery | Refund / Escalation | Feature Improvement | Staff Training | Marketing Opportunity | No Action Needed",
   "action_reason": "short explanation",
-  "priority_score": integer between 0 and 100
+  "priority_score": 0
 }}
 
-Guidelines:
-- Low rating + negative tone → high priority
-- Positive feedback → low priority
-- Contradictory signals → medium priority
+Rules:
+- Low rating and negative sentiment means high priority.
+- Positive feedback means low priority.
+- Contradictory signals means medium priority.
 """
     return call_llm(prompt)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> c31d7d60818e199c4d8026ebdc255dab640637fb
-
