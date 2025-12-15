@@ -7,7 +7,7 @@ import streamlit as st
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "meta-llama/llama-3-8b-instruct:free"
+MODEL = "mistralai/devstral-2512:free"
 
 HEADERS = {
     "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -78,6 +78,7 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
 
 
