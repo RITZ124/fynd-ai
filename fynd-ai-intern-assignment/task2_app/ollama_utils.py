@@ -8,7 +8,7 @@ MODEL = "mistralai/mistral-7b-instruct"
 HEADERS = {
     "Authorization": f"Bearer {OPENROUTER_API_KEY}",
     "Content-Type": "application/json",
-    "HTTP-Referer": "https://fynd-ai-intern-assignment.streamlit.app",
+    "Referer": "https://fynd-ai-intern-assignment.streamlit.app",
     "X-Title": "Fynd AI Intern Take Home Assignment"
 }
 
@@ -73,6 +73,7 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
 
 
