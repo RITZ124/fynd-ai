@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import streamlit as st
 
 st.set_page_config(
@@ -14,3 +15,4 @@ Use the sidebar to navigate:
 - **User Dashboard** → Submit feedback
 - **Admin Dashboard** → Review & analyze feedback
 """)
+
