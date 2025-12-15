@@ -7,7 +7,10 @@ MODEL = "mistralai/mistral-7b-instruct"
 
 HEADERS = {
     "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-    "Content-Type": "application/json"
+    "Content-Type": "application/json",
+    # REQUIRED by OpenRouter
+    "HTTP-Referer": "https://fynd-ai-intern-assignment.streamlit.app",
+    "X-Title": "Fynd AI Intern Take Home Assignment"
 }
 
 def call_llm(prompt):
@@ -67,3 +70,4 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
