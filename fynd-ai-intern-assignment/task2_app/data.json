@@ -1,0 +1,82 @@
+[
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Customer,\n\nThank you for taking the time to rate our service as 4 out of 5! We're thrilled to hear that you found us \"very lovely.\" Your positive feedback means a great deal to us and motivates us to continue providing excellent service. If there's anything specific you enjoyed about your experience, please let us know!\n\nWe are always striving for improvement, so if you have any suggestions on how we can further enhance our service, we would be most grateful for your insight. Once again, thank you for your kind words and patronage. We look forward to serving you in the future!\n\nBest Regards, [Your Name]\n[Company Name] Customer Support Team",
+    "consistency": "Ambiguous",
+    "action_category": "No Action Needed",
+    "action_reason": "The customer's feedback is positive but vague, indicating general satisfaction rather than specific issues or suggestions. However, it's important to maintain a high level of service consistency.",
+    "priority_score": 30,
+    "timestamp": "2025-12-15 13:31:06.887286"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Valued Customer,\n\nThank you for taking the time to rate our service with a score of 4. We're delighted to hear that you found our service 'very lovely'. Your positive feedback is greatly appreciated and motivates us to continue improving. If there's anything specific you enjoyed or appreciated about your experience, we would love to know more!\n\nShould the rating not entirely reflect your experience, please do let us know so we can address any concerns and ensure your future interactions with us are even better. Thank you once again for choosing us, and we look forward to serving you again soon.\n\nBest regards,\n[Your Name]\n[Your Position]\nCustomer Support Team\n[Company Name]",
+    "consistency": "Ambiguous",
+    "action_category": "Marketing Opportunity",
+    "action_reason": "The customer used a positive term ('lovely'), but the review lacks specific details about the product or service. This could be an opportunity to reach out and ask for more feedback or encourage them to share their experience with others.",
+    "priority_score": 50,
+    "timestamp": "2025-12-15 13:32:39.636817"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Valued Customer,\n\nThank you for taking the time to rate our service as 4 out of 5 and for your kind words, \"very lovely.\" We're glad to hear that you appreciate our efforts! However, we noticed a slight mismatch between your high rating and the adjective 'very lovely.' If this rating accurately reflects your overall experience with us, we would be delighted. But if there is room for improvement in any area, please let us know. We value your feedback as it helps us serve you better.\n\nBest Regards,\n[Your Name]\n[Your Position]\n[Customer Support Team]",
+    "consistency": "Ambiguous",
+    "action_category": "No Action Needed",
+    "action_reason": "'Very lovely' does not provide specific details for improvement or issues. The feedback is general and positive.",
+    "priority_score": 20,
+    "timestamp": "2025-12-15 13:32:48.522573"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Customer,\n\nThank you for taking the time to rate our service as 4 out of 5! We're truly delighted to hear that you find our service 'very lovely.' Your positive feedback is appreciated and motivates us to continue providing excellent service.\n\nIf there are any specific aspects you particularly enjoyed or found impressive, we would love to know more! This helps us improve in the areas that matter most to our customers like you.\n\nShould you have any concerns or suggestions for improvement, please do not hesitate to share them with us. Your voice matters and we strive to create a meaningful difference in your experience with us.\n\nOnce again, thank you for your kind words, and we look forward to serving you better!\n\nBest regards,\n[Your Name]\n[Your Position]\n[Company Name]",
+    "consistency": "Ambiguous",
+    "action_category": "No Action Needed",
+    "action_reason": "The customer's feedback is positive but vague, indicating general satisfaction rather than specific areas for improvement. However, it's important to maintain a high level of service.",
+    "priority_score": 20,
+    "timestamp": "2025-12-15 13:33:22.541299"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Customer,\n\nThank you so much for taking the time to rate our service as 4 out of 5! We're thrilled to hear that you found us \"very lovely\". Your feedback means a lot to us and we are glad that we could meet your expectations. If there's anything else you'd like to share or if there's room for improvement, please don't hesitate to let us know!\n\nBest regards,\n[Your Name]\n[Customer Support Team]",
+    "consistency": "Ambiguous",
+    "action_category": "Marketing Opportunity",
+    "action_reason": "The customer's positive sentiment suggests a satisfied user, which could be leveraged for marketing purposes. However, the lack of specific issues or suggestions indicates that more information is needed.",
+    "priority_score": 50,
+    "timestamp": "2025-12-15 13:33:37.349236"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Customer,\n\nThank you for taking the time to rate our service as 4 out of 5 stars! We're delighted to hear that you found us \"very lovely\". Your positive feedback means a lot to us and we're glad to know that we were able to meet your expectations. If there's anything more you'd like to share or if you have any suggestions for improvement, please don't hesitate to let us know. We value your opinion and are always striving to enhance our services.\n\nBest Regards,\n[Your Name]\n[Your Position]\n[Customer Support Team]",
+    "consistency": "Ambiguous",
+    "action_category": "No Action Needed",
+    "action_reason": "The feedback is positive but lacks specific details that would suggest a need for action. The term 'very lovely' is vague and does not provide insights into potential areas of improvement.",
+    "priority_score": 20,
+    "timestamp": "2025-12-15 13:33:50.287140"
+  },
+  {
+    "rating": 4,
+    "review": "very lovely",
+    "ai_response": "Dear Customer,\n\nThank you for taking the time to rate our service as 4 out of 5 and for leaving such a positive review with the word \"lovely\". We're thrilled to hear that you had a pleasant experience with us. Your feedback means a lot to us, and we will strive to maintain this level of satisfaction in all future interactions.\n\nIf by any chance, there is something specific about our service that you found lovely, it would be great if you could share more details so we can continue to improve and offer the best possible experience for our customers.\n\nOnce again, thank you for your kind words, and we look forward to serving you again in the future!\n\nBest regards,\n[Your Name]\n[Customer Support Team]",
+    "consistency": "Ambiguous",
+    "action_category": "No Action Needed",
+    "action_reason": "The customer's feedback is positive but vague, suggesting a general satisfaction rather than specific issues or improvement opportunities.",
+    "priority_score": 20,
+    "timestamp": "2025-12-15 13:34:01.993211"
+  },
+  {
+    "rating": 1,
+    "review": "food quality was bad",
+    "ai_response": "Dear Customer,\n\nThank you for taking the time to share your feedback with us. I'm truly sorry to hear that our food did not meet your expectations, particularly as we strive to deliver high-quality meals to all of our customers. Your rating of 1 indicates a strong dissatisfaction and it is important for us to understand what went wrong in this instance.\n\nCould you please help us by providing more details about the specific issue(s) you encountered with the food quality? We'd appreciate any additional information that could assist us in improving our services for future customers. Once again, thank you for your honest review and we look forward to hearing back from you.\n\nBest regards,\n[Your Name]\nCustomer Support Assistant",
+    "consistency": "Consistent Negative",
+    "action_category": "Refund / Escalation",
+    "action_reason": "The customer expressed dissatisfaction with the food quality. It is important to address this issue promptly to maintain customer satisfaction and prevent further negative feedback.",
+    "priority_score": 90,
+    "timestamp": "2025-12-15 13:35:55.998078"
+  }
+]
