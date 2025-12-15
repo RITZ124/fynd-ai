@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 import os
 import streamlit as st
@@ -99,3 +100,4 @@ Guidelines:
 =======
 
 >>>>>>> c31d7d60818e199c4d8026ebdc255dab640637fb
+
