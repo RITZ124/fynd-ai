@@ -1,7 +1,7 @@
 import requests
 import os
 
-OPENROUTER_API_KEY = os.getenv("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")
+OPENROUTER_API_KEY = os.getenv("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")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "mistralai/mistral-7b-instruct"
 
@@ -78,5 +78,6 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
 
