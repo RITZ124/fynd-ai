@@ -14,9 +14,6 @@ HEADERS = {
 
 
 def call_llm(prompt):
-    if not OPENROUTER_API_KEY:
-        return "OPENROUTER_API_KEY not found in Streamlit secrets."
-
     try:
         payload = {
             "model": MODEL,
@@ -32,12 +29,13 @@ def call_llm(prompt):
             json=payload,
             timeout=20
         )
-        response.raise_for_status()
 
+        response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"].strip()
 
     except Exception as e:
         return f"AI service unavailable: {str(e)}"
+
 
 def analyze_feedback(review, rating):
     prompt = f"""
@@ -73,6 +71,7 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
 
 
