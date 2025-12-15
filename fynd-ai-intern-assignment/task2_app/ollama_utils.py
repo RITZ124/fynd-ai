@@ -14,6 +14,9 @@ HEADERS = {
 }
 
 def call_llm(prompt):
+    if not OPENROUTER_API_KEY:
+        return "OPENROUTER_API_KEY not found in environment."
+
     try:
         payload = {
             "model": MODEL,
@@ -27,13 +30,18 @@ def call_llm(prompt):
             OPENROUTER_URL,
             headers=HEADERS,
             json=payload,
-            timeout=15
+            timeout=20
         )
+
         response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"].strip()
 
+    except requests.exceptions.HTTPError as e:
+        return f"AI service unavailable: {e}"
+
     except Exception as e:
         return f"AI service unavailable: {str(e)}"
+
 
 
 def analyze_feedback(review, rating):
@@ -70,4 +78,5 @@ Guidelines:
 - Contradictory signals → medium priority
 """
     return call_llm(prompt)
+
 
