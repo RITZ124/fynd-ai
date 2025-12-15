@@ -64,10 +64,10 @@ Copy code
 ## 🚀 Deployment Links
 
 - **User Dashboard:**  
-  https://<your-app>.streamlit.app/User_Dashboard
+  https://fynd-ai-feedback.streamlit.app/User_Dashboard
 
 - **Admin Dashboard:**  
-  https://<your-app>.streamlit.app/Admin_Dashboard
+  https://fynd-ai-feedback.streamlit.app/Admin_Dashboard
 
 ---
 
