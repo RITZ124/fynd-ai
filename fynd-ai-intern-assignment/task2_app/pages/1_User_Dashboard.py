@@ -1,7 +1,16 @@
 # -*- coding: utf-8 -*-
 
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import importlib.util
+from pathlib import Path
+
+UTILS_PATH = Path(__file__).resolve().parents[1] / "ollama_utils.py"
+
+spec = importlib.util.spec_from_file_location("ollama_utils", UTILS_PATH)
+ollama_utils = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(ollama_utils)
+
+call_llm = ollama_utils.call_llm
+analyze_feedback = ollama_utils.analyze_feedback
 
 import streamlit as st
 import json
@@ -69,5 +78,6 @@ Review: {review}
         st.success("Feedback submitted successfully!")
         st.subheader("AI Response")
         st.write(ai_response)
+
 
 
